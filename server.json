@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "fi.cleave/swap",
+  "title": "Cleave for Agents: token swaps, cross-chain swaps and gas top-ups",
+  "description": "Swap, bridge and get gas on 6 EVM chains. Each plan states its outcome before you sign. No API key.",
+  "version": "1.0.0",
+  "websiteUrl": "https://cleave.fi",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.cleave.fi/mcp"
+    }
+  ]
+}

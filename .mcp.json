@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "cleave": {
+      "type": "http",
+      "url": "https://api.cleave.fi/mcp"
+    }
+  }
+}

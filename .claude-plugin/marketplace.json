@@ -1,0 +1,14 @@
+{
+  "name": "cleave",
+  "owner": {
+    "name": "Cleave"
+  },
+  "plugins": [
+    {
+      "name": "cleave-swap",
+      "source": "./",
+      "description": "Swaps, bridges and gas top-ups on six EVM chains. Each plan states its outcome and fallback before your wallet signs. Unsigned calls, no API key.",
+      "version": "1.0.0"
+    }
+  ]
+}
