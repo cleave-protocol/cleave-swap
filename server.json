@@ -3,8 +3,22 @@
   "name": "fi.cleave/swap",
   "title": "Cleave for Agents: token swaps, cross-chain swaps and gas top-ups",
   "description": "Swap, bridge and get gas on 6 EVM chains. Each plan states its outcome before you sign. No API key.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://cleave.fi",
+  "repository": {
+    "url": "https://github.com/cleave-protocol/cleave-swap",
+    "source": "github",
+    "id": "1434392682"
+  },
+  "icons": [
+    {
+      "src": "https://cleave.fi/logo-cleave-agents-512.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    }
+  ],
   "remotes": [
     {
       "type": "streamable-http",
