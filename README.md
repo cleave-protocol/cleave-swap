@@ -1,6 +1,6 @@
 # Cleave for Agents: token swaps, cross-chain swaps and gas top-ups
 
-[![Listed on mcpservers.org](https://mcpservers.org/badge.svg)](https://mcpservers.org/servers/cleave-protocol/cleave-swap)
+[![Listed on mcpservers.org](https://mcpservers.org/badge.svg)](https://mcpservers.org/servers/cleave-protocol/cleave-swap) [![mcptry](https://mcptry.com/badge/fi.cleave/swap)](https://mcptry.com/servers/fi.cleave/swap)
 
 Swaps, bridges and gas top-ups on Ethereum, Arbitrum, Base, BNB Chain, Polygon and Optimism, worst case first. cleave_plan_swap returns unsigned calls and states the outcome first: an exact amount or at least a minimum; with a swap on arrival, the token, else a named fallback token; and where a transfer can go unfilled, a refund of the bridged token on the source chain hours later. cleave_get_gas gets native gas for a wallet that holds USDC but no gas, from one signed USDC authorization. cleave_track_swap reports progress the same way on every route; cleave_find_token resolves symbols and flags look-alikes. Routes that need a claim step are left out. No API key; your wallet signs.
 
