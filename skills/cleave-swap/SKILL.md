@@ -9,9 +9,9 @@ Use the Cleave MCP server at `https://api.cleave.fi/mcp`, or the HTTP API at `ht
 
 1. If the user names a token by symbol and its address is unknown, call `cleave_find_token`. When several tokens share the symbol, ask the user which address.
 2. Call `cleave_plan_swap` with the chains, the tokens, the amount as a decimal string and the user's wallet.
-3. Read the plan before anything is signed: blocking notices and warnings first, then the outcome kind, the minimum, any fallback token, the third-party costs and `validUntil`. A blocked plan has no calls. When `requiresConfirmation` is true, ask the user.
+3. Read the plan before anything is signed: blocking notices and warnings first, then the outcome kind, any fallback token, the third-party costs and `validUntil`. A blocked plan has no calls. When `requiresConfirmation` is true, ask the user.
 4. Hand the calls to the user's wallet in order, before `validUntil`. Never sign or send on the user's behalf.
 5. After the wallet sends, call `cleave_track_swap` with the chain, the mined transaction hash and the plan's `requestId`. Do not send the plan again while it is in flight.
-6. For a wallet that holds USDC but no native gas, use `cleave_get_gas`: it returns an offer and one USDC authorization for the wallet to sign; signing costs no gas. Call it again with the offer and the signature, then track it by `requestId`.
+6. For a wallet that holds USDC but no native gas, use `cleave_get_gas` with the paying wallet: it returns an offer and one USDC authorization for the wallet to sign; signing costs no gas. Call it again with the offer, the signature and the same wallet, then track it by `requestId`.
 
 Use is subject to the Terms of Use (https://cleave.fi/terms) and the Privacy Policy (https://cleave.fi/privacy).
